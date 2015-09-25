@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pwdGen" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="test">
+
+<input type="text" placeholder="password" ng-model="value">
+<input type="button" ng-click="generateClick()" value="Generate">
+
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/password-generator/dist/password-generator.min.js"></script>
+<script src="dist/ya-password-generator.js"></script>
+<script type="text/javascript">
+    angular.module('pwdGen', ['ya'])
+            .controller('test', ['$scope', 'ya.passwordGenerator', function ($scope, pwdGenerator) {
+                $scope.value = '';
+                $scope.generateClick = function () {
+                    $scope.value = pwdGenerator.generate();
+                }
+            }]);
+</script>
+</body>
+</html>
