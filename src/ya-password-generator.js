@@ -1,5 +1,5 @@
 (function () {
-	angular.module('ya', [])
+	angular.module('ya.passwordGenerator', [])
 		.service('ya.passwordGenerator', passwordGenerator);
 
 	passwordGenerator.$inject = ['$window'];
