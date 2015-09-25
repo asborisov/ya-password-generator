@@ -5,6 +5,9 @@
   "authors": [
     "Artem Borisov <timan.b@gmail.com>"
   ],
+  "main": [
+    "dist/ya-password-generator.min.js"
+  ],
   "description": "Simple password generation service",
   "keywords": [
     "angular",

@@ -2,7 +2,7 @@
   "name": "ya-angular-password-generator",
   "version": "0.0.1",
   "description": "Simple Angular password generator service",
-  "main": "index.js",
+  "main": "dist/ya-password-generator.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
