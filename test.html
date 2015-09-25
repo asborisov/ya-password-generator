@@ -13,10 +13,10 @@
 <input type="button" ng-click="generateClick()" value="Generate">
 
 <script src="node_modules/angular/angular.js"></script>
-<script src="node_modules/password-generator/dist/password-generator.min.js"></script>
+<script src="bower_components/password-generator/dist/password-generator.min.js"></script>
 <script src="dist/ya-password-generator.js"></script>
 <script type="text/javascript">
-    angular.module('pwdGen', ['ya'])
+    angular.module('pwdGen', ['ya.passwordGenerator'])
             .controller('test', ['$scope', 'ya.passwordGenerator', function ($scope, pwdGenerator) {
                 $scope.value = '';
                 $scope.generateClick = function () {

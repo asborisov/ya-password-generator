@@ -13,5 +13,8 @@
     "angular",
     "password-generation"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "password-generator": ">=1.0.1"
+  }
 }
