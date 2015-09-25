@@ -1,0 +1,14 @@
+{
+  "name": "ya-password-generator",
+  "version": "0.0.1",
+  "homepage": "https://github.com/asborisov/ya-password-generator",
+  "authors": [
+    "Artem Borisov <timan.b@gmail.com>"
+  ],
+  "description": "Simple password generation service",
+  "keywords": [
+    "angular",
+    "password-generation"
+  ],
+  "license": "MIT"
+}
