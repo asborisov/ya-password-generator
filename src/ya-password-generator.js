@@ -4,6 +4,11 @@
 
 	passwordGenerator.$inject = ['$window'];
 
+	/**
+	 *
+	 * @param $window.generatePassword password-generator module
+	 * @returns {{generate: generate}}
+	 */
 	function passwordGenerator($window) {
 		return {
 			generate: generate
